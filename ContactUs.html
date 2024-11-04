@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <p>Your one-stop solution for form validation!</p>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <h2>Sample Form</h2>
+        <form id="sampleForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="120" required>
+            
+            <input type="submit" value="Submit" href="home page.html">
+        </form>
+        <p id="errorMsg" class="error"></p>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
